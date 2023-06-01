@@ -8,21 +8,17 @@
 <div class="container mt-3">
   <form>
       <div class="mb-3 mt-3">
-      <label for="uname">사용자이름:</label>
+      <label for="uname">username:</label>
       <input type="text" class="form-control" id="username" placeholder="사용자이름" name="username">
     </div>
-  
-    <div class="mb-3 mt-3">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
+
     <div class="mb-3">
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
     </div>
 
-    <button id="btn-save" type="submit" class="btn btn-primary">회원가입</button>
+    <button id="btn-login" type="submit" class="btn btn-primary">로그인</button>
   </form>
 </div>
-<script src="/js/user.js"></script>
+<script src="/js/login.js"></script>
 <%@ include file="../layout/zblogfooter.jsp"%>

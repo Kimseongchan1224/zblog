@@ -69,8 +69,8 @@ memberjoin();
 			contentType: "application/json; charset=utf-8"
 		}).done(function(response) {
 			console.log(response);
-			alert(response);
-			location = "/";
+			alert(response[data]);
+			// location = "/";
 		}).fail(function(error) {
 			alert("!/js/user.js에서 에러발생: " + error);
 		});
