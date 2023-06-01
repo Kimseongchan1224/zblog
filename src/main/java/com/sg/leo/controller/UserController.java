@@ -68,6 +68,7 @@ public class UserController {
 			return new ResponseDTO<>(HttpStatus.OK.value(), 
 					user.getUsername() + "님 회원가입 성공했어요");
 		}else {
+			
 			// 중복된 username있음, 에러메시지 표시
 			return new ResponseDTO<>(HttpStatus.BAD_REQUEST.value(), 
 					user.getUsername() + "님 이미 회원임 또는 username 사용중");
