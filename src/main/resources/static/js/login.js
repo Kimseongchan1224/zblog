@@ -17,7 +17,7 @@ let loginObject = {
 		
 		console.log(user);
 
-		$.ajax({
+		$.ajax({ 
 			type: "POST",
 			url: "/auth/login",
 			data: JSON.stringify(user),
