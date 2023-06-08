@@ -22,7 +22,7 @@ let postObject = {
 			content: $("#content").val()
 		}
 		
-		console.log(user);
+		console.log(post);
 
 		$.ajax({
 			type: "POST",
