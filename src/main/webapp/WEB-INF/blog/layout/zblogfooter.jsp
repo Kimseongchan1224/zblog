@@ -6,7 +6,7 @@
 <br>
 <div class="mt-5 p-4 text-center">
 <p>Created by AI department</p>
-<p> 연락처 031-740-1371 이용희 신구대 AI과 </p>
+<p> 연락처 031-740-1371 김성찬 신구대 AI과 </p>
 </div>
 
 </body>
