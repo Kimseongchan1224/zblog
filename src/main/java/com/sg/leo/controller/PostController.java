@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -40,4 +41,17 @@ public class PostController {
 		postService.insertPost(post);
 		return new ResponseDTO<>(HttpStatus.OK.value(), "새로운포스트 등록");
 	}
+	@GetMapping("/post/{id}")
+	public String getPost(@PathVariable int id, Model model) {
+		model.addAttribute("thepost", postService.getPost(id));
+		return "post/getPost";
+	}
 }
+
+
+
+
+
+
+
+
